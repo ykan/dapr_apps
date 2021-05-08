@@ -1,0 +1,22 @@
+{
+  "name": "dapr_apps",
+  "version": "1.0.0",
+  "description": "dapr apps",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "app_1": "dapr run --app-id app_1 --app-port 3000 --dapr-http-port 3500 node apps/app_1/app.js",
+    "app_2": "dapr run --app-id app_2 --app-port 3001 --dapr-http-port 3501 node apps/app_2/app.js"
+  },
+  "repository": "git@github.com:ykan/dapr_apps.git",
+  "author": "ykan <nameyukan@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.13.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.1"
+  }
+}
